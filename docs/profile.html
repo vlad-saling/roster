@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SME Profile</title>
+    <meta name="description" content="Detailed subject-matter expert profile." />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/themes.css" />
+  </head>
+  <body class="theme-light">
+    <div class="page-root page-root--profile">
+      <div class="site-header">
+        <header class="app-header">
+          <div class="app-header__left">
+            <span class="app-logo">Roster</span>
+            <nav class="app-nav" aria-label="Main">
+              <a href="index.html" class="app-nav__item app-nav__item--link app-nav__item--active" data-i18n="nav.experts">Experts</a>
+              <button class="app-nav__item" type="button" data-i18n="nav.pricing">Pricing</button>
+              <button class="app-nav__item" type="button" data-i18n="nav.about">About</button>
+            </nav>
+          </div>
+          <div class="app-header__right">
+            <div id="langSwitcher" class="lang-switch" aria-label="Language"></div>
+            <button class="chip chip--ghost" id="toggleTheme" aria-label="Toggle theme">
+              <span class="chip__dot"></span>
+              <span class="chip__label">Dark</span>
+            </button>
+          </div>
+        </header>
+      </div>
+
+      <section class="hero-banner" aria-label="Intro">
+        <div class="hero-banner__inner">
+          <p class="hero-banner__tagline" data-i18n="banner.tagline">Expertise on demand</p>
+          <h2 class="hero-banner__title" data-i18n="banner.title">Trusted advisors for complex challenges</h2>
+        </div>
+      </section>
+
+      <div class="site-main">
+        <main class="app-main app-main--profile">
+          <p class="profile-back-wrap">
+            <a href="index.html" class="back-link"><span data-i18n="profile.backLinkPrefix">← All </span><span class="text-highlight" data-i18n="profile.backLinkHighlight">experts</span></a>
+          </p>
+          <article id="profileShell" class="profile-shell" aria-live="polite">
+            <div class="profile-shell__loading" data-i18n="profile.loading">Loading profile…</div>
+          </article>
+        </main>
+      </div>
+
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <div class="site-footer__grid">
+            <div class="site-footer__block">
+              <h3 class="site-footer__heading" data-i18n="footer.contact">Contact</h3>
+              <p class="site-footer__text" data-i18n="footer.contactLine">hello@example.com</p>
+              <p class="site-footer__text" data-i18n="footer.contactLine2">+1 234 567 890</p>
+            </div>
+            <div class="site-footer__block">
+              <h3 class="site-footer__heading" data-i18n="footer.partners">Partners</h3>
+              <p class="site-footer__text" data-i18n="footer.partnersLine">Strategic partners and affiliates.</p>
+            </div>
+            <div class="site-footer__block">
+              <h3 class="site-footer__heading" data-i18n="footer.company">Company</h3>
+              <p class="site-footer__text" data-i18n="footer.companyLine">About us · Careers · Press</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="site-footer-bottom">
+        <footer class="app-footer">
+          <small data-i18n="footer.roster">Built as a lightweight static roster. Deployed via GitHub Pages.</small>
+        </footer>
+      </div>
+    </div>
+
+    <script type="module" src="scripts/render-profile.js"></script>
+  </body>
+</html>

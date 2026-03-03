@@ -1,0 +1,107 @@
+# AI Handoff: Adding New SME Profiles
+
+This document is for **AI agents** and **maintainers** who add or update subject-matter expert (SME) profiles. The roster is static: all data lives in **`docs/data/smes.json`**. Adding a new entry there automatically adds a tile on the main roster and a detail page at `profile.html?id=<id>`.
+
+---
+
+## JSON schema (one object per SME)
+
+Each SME is a single object in the **`docs/data/smes.json`** array. Use this schema exactly so the site and filters work.
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `id` | string | **Yes** | Unique slug: lowercase, hyphenated (e.g. `jane-dee`). Used in URLs. |
+| `name` | string | **Yes** | Full display name. |
+| `title` | string | **Yes** | Job title or role (e.g. "Head of Protocol Research"). |
+| `headline` | string | No | One-line positioning (used on profile page). |
+| `shortBio` | string | **Yes** | 1–2 sentences for the roster card (keep under ~160 chars for display). |
+| `longBio` | string | No | Full bio; paragraphs separated by `\n\n`. Shown on profile page. |
+| `history` | array | No | Professional / work history. Each item: `{ "role": "...", "organization": "...", "period": "2020–2023", "description": "..." }`. Shown below bio. |
+| `sectors` | string[] | No | High-level sectors (e.g. `["Web3", "Fintech"]`). Used for filter chips and card pill. |
+| `tags` | string[] | No | Expertise tags (e.g. `["Tokenomics", "MEV"]`). Used in filters and profile. |
+| `keywords` | string[] | No | Extra terms for search (e.g. `["protocol", "L1", "DeFi"]`). |
+| `location` | string | No | e.g. "Remote (EU)", "London, UK". |
+| `languages` | string[] | No | Spoken languages (e.g. `["English", "Slovak", "Czech"]`). Shown on profile and roster card. |
+| `avatar` | string | No | URL or path to image. Empty string if none. |
+| `links` | array | No | `[{ "label": "LinkedIn", "url": "https://..." }]`. |
+| `engagement` | string[] | No | e.g. `["Advisory", "Fractional", "Hands-on"]`. |
+| `createdAt` | string | No | ISO date or YYYY-MM-DD for "recent" sort. |
+| `colorVariant` | number | No | **When adding a new person**, assign a permanent color: set to an integer **0–5** (random or chosen). This drives the card top bar and profile avatar colour (teal, blue, violet, amber, rose, cyan). If omitted, the app derives a variant from the profile `id` hash.
+
+- **Slug rule for `id`**: lowercase, spaces and punctuation replaced by a single hyphen, no leading/trailing hyphens (e.g. "Jane Doe" → `jane-doe`). Must be **unique** in the file.
+
+---
+
+## Example: from PDF text to JSON
+
+**Input (raw PDF copy-paste):**
+
+```
+JANE DEE — Head of Protocol Research
+
+Jane has spent eight years in crypto and traditional finance, with a focus on
+protocol-level research and tokenomics. She led research at a tier-1 L1 and
+has published on MEV, consensus, and incentive design. She advises teams on
+economic security and governance and is available for fractional or
+project-based engagements.
+
+Expertise: Protocol design, Tokenomics, MEV, Governance. Sectors: Web3, DeFi.
+Location: Remote (EU). Links: example.com/jane, @janedee, LinkedIn.
+```
+
+**Output (single new entry for `docs/data/smes.json`):**
+
+```json
+{
+  "id": "jane-dee",
+  "name": "Jane Dee",
+  "title": "Head of Protocol Research",
+  "headline": "Web3 protocol design and tokenomics.",
+  "shortBio": "Protocol researcher and former quant. Focus on MEV, consensus, and incentive design.",
+  "longBio": "Jane has spent eight years in crypto and traditional finance, with a focus on protocol-level research and tokenomics. She led research at a tier-1 L1 and has published on MEV, consensus, and incentive design. She advises teams on economic security and governance and is available for fractional or project-based engagements.",
+  "sectors": ["Web3", "DeFi"],
+  "tags": ["Protocol design", "Tokenomics", "MEV", "Governance"],
+  "keywords": ["protocol", "tokenomics", "MEV", "consensus", "L1", "DeFi", "governance"],
+  "location": "Remote (EU)",
+  "languages": ["English", "Slovak"],
+  "avatar": "",
+  "links": [
+    { "label": "Website", "url": "https://example.com/jane" },
+    { "label": "Twitter", "url": "https://twitter.com/janedee" },
+    { "label": "LinkedIn", "url": "https://linkedin.com/in/janedee" }
+  ],
+  "engagement": ["Advisory", "Fractional", "Project-based"],
+  "createdAt": "2025-01-15"
+}
+```
+
+---
+
+## Step-by-step for an AI agent
+
+1. **Receive**: User provides raw text (e.g. copy-pasted from a PDF bio).
+2. **Extract**: Parse name, title, bio, expertise, sectors, location, spoken languages, links, and engagement from the text. Infer missing fields or leave as empty string / empty array.
+3. **Generate `id`**: From the person’s name using the slug rule (lowercase, hyphenated, unique). If a conflict exists, append a number (e.g. `jane-dee-2`) or ask the user.
+4. **Build**: One JSON object matching the schema above. Use double quotes, no trailing commas if the JSON standard in the repo disallows them (the current `smes.json` uses no trailing commas).
+5. **Insert**: Add the new object to the **array** in `docs/data/smes.json`:
+   - Preserve existing indentation (e.g. 2 spaces).
+   - Insert after the last entry: add a comma after the previous object’s `}` and then the new object, then ensure the closing `]` is on its own line.
+   - Keep the array sorted if the repo convention is e.g. alphabetical by `id` or by `createdAt` (see README or existing file).
+6. **Verify**: Ensure the file is valid JSON (no duplicate keys, no trailing commas before `]` or `}` if the project's linter forbids them).
+7. **Color (optional but recommended)**: When adding a new person, set `colorVariant` to a random integer 0–5 so that profile has a permanent, consistent colour on the roster and profile page. If omitted, the site derives one from the profile id.
+
+---
+
+## Localization (UI only)
+
+- **Scope**: Only **UI chrome** is translated (navigation, headings, filter labels, buttons, footer, profile section titles, error messages). SME names, bios, tags, and links in `smes.json` stay in English.
+- **Data**: Translations live in **`docs/data/i18n.json`** with top-level keys `en`, `fi`, `sv`. Each language is an object of string keys (e.g. `hero.text`, `filters.title`, `profile.sections.bio`). Use `{{n}}` or `{{id}}` in a string for interpolation; the app replaces them via `t(key, { n: 5 })` etc.
+- **Adding or editing UI text**: Edit `docs/data/i18n.json` and add or change the key in all three languages (`en`, `fi`, `sv`). Keep keys in sync across languages. New keys used in HTML (e.g. `data-i18n="my.key"`) or in scripts (`t('my.key')`) will show the translated string once added to i18n.json.
+
+---
+
+## Adding new developers / maintainers
+
+- **Run locally**: From the repo root, run a static server rooted at `docs/` (e.g. `python -m http.server 8080` and open `http://localhost:8080/docs/`, or run from inside `docs/` and open `http://localhost:8080/`). See README.
+- **Edit data**: Only `docs/data/smes.json` needs to be edited to add or change profiles. No build step.
+- **Reviewing AI edits**: Diff `docs/data/smes.json` for new or changed objects; confirm `id` is unique and required fields are present. Run the site locally and open the new profile URL to spot-check.

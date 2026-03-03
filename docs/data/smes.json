@@ -1,0 +1,272 @@
+[
+  {
+    "id": "jane-dee",
+    "name": "Jane Dee",
+    "title": "Head of Protocol Research",
+    "headline": "Web3 protocol design and tokenomics.",
+    "shortBio": "Protocol researcher and former quant. Focus on MEV, consensus, and incentive design.",
+    "longBio": "Jane has spent eight years in crypto and traditional finance, with a focus on protocol-level research and tokenomics. She led research at a tier-1 L1 and has published on MEV, consensus, and incentive design. She advises teams on economic security and governance and is available for fractional or project-based engagements.",
+    "history": [
+      { "role": "Head of Research", "organization": "Layer-1 Foundation", "period": "2021–2024", "description": "Led protocol economics and tokenomics research. Published on MEV and consensus." },
+      { "role": "Quant Researcher", "organization": "TradFi fund", "period": "2018–2021", "description": "Macro and crypto research." }
+    ],
+    "sectors": ["Web3", "DeFi"],
+    "tags": ["Protocol design", "Tokenomics", "MEV", "Governance"],
+    "keywords": ["protocol", "tokenomics", "MEV", "consensus", "L1", "DeFi", "governance"],
+    "location": "Remote (EU)",
+    "languages": ["English", "Slovak"],
+    "avatar": "",
+    "links": [
+      { "label": "Website", "url": "https://example.com/jane" },
+      { "label": "Twitter", "url": "https://twitter.com/janedee" },
+      { "label": "LinkedIn", "url": "https://linkedin.com/in/janedee" }
+    ],
+    "engagement": ["Advisory", "Fractional", "Project-based"],
+    "createdAt": "2025-01-15"
+  },
+  {
+    "id": "alex-rivera",
+    "name": "Alex Rivera",
+    "title": "Fintech & RegTech Lead",
+    "headline": "Payments, compliance, and embedded finance.",
+    "shortBio": "Ex-big bank and neobank. Builds compliant payment and lending stacks.",
+    "longBio": "Alex has led product and engineering at a major bank and later at a neobank. He specializes in payments infrastructure, KYC/AML workflows, and embedded finance. He helps startups and scale-ups design compliant systems and integrate with schemes and regulators. Available for advisory and hands-on architecture.",
+    "history": [
+      { "role": "VP Product", "organization": "Neobank", "period": "2022–2024", "description": "Payments and lending product. Led compliance integration." },
+      { "role": "Director Engineering", "organization": "Major bank", "period": "2016–2022", "description": "Core payments and KYC/AML platforms." }
+    ],
+    "sectors": ["Fintech", "RegTech"],
+    "tags": ["Payments", "Compliance", "KYC/AML", "Embedded finance"],
+    "keywords": ["payments", "compliance", "KYC", "AML", "embedded finance", "lending", "neobank"],
+    "location": "London, UK",
+    "languages": ["English", "Spanish"],
+    "avatar": "",
+    "links": [
+      { "label": "LinkedIn", "url": "https://linkedin.com/in/alexrivera" },
+      { "label": "Calendly", "url": "https://calendly.com/alexrivera" }
+    ],
+    "engagement": ["Advisory", "Hands-on", "Fractional"],
+    "createdAt": "2025-02-01"
+  },
+  {
+    "id": "sam-chen",
+    "name": "Sam Chen",
+    "title": "Senior Project Manager",
+    "headline": "Delivery-focused PM for software and product teams.",
+    "shortBio": "PMP and Scrum Master. Ships products on time with distributed teams.",
+    "longBio": "Sam has led delivery for product and engineering teams across fintech and SaaS. He runs ceremonies, keeps backlogs healthy, and unblocks stakeholders. Experienced with Agile, Kanban, and hybrid models. Available for interim PM roles and delivery coaching.",
+    "history": [
+      { "role": "Delivery Lead", "organization": "SaaS scale-up", "period": "2022–2024", "description": "Led two product squads; improved release predictability." },
+      { "role": "Project Manager", "organization": "Consulting firm", "period": "2019–2022", "description": "Client-facing delivery for banking and insurance." }
+    ],
+    "sectors": ["Fintech", "Healthcare"],
+    "tags": ["Agile", "Scrum", "Stakeholder management", "Roadmaps"],
+    "keywords": ["project management", "delivery", "Agile", "Scrum", "PMO"],
+    "location": "Berlin, DE",
+    "languages": ["English", "German", "Mandarin"],
+    "avatar": "",
+    "links": [
+      { "label": "LinkedIn", "url": "https://linkedin.com/in/samchen" }
+    ],
+    "engagement": ["Hands-on", "Fractional", "Advisory"],
+    "createdAt": "2025-02-10",
+    "colorVariant": 1
+  },
+  {
+    "id": "morgan-webb",
+    "name": "Morgan Webb",
+    "title": "Full-Stack Web Developer",
+    "headline": "React, Node, and cloud-native web apps.",
+    "shortBio": "Full-stack engineer. Builds scalable web products from UI to API and deployment.",
+    "longBio": "Morgan has shipped production web apps for startups and enterprises. Strong in React, TypeScript, Node.js, and AWS or Vercel. Comfortable leading technical decisions and mentoring. Available for greenfield builds and legacy modernisation.",
+    "history": [
+      { "role": "Senior Engineer", "organization": "Product company", "period": "2021–2024", "description": "Owned frontend and API for core product." },
+      { "role": "Web Developer", "organization": "Agency", "period": "2018–2021", "description": "Client projects in React and Node." }
+    ],
+    "sectors": ["Web3", "Fintech"],
+    "tags": ["React", "TypeScript", "Node.js", "REST APIs"],
+    "keywords": ["web development", "full-stack", "React", "Node", "TypeScript"],
+    "location": "Remote (EU)",
+    "languages": ["English", "French"],
+    "avatar": "",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/morganwebb" },
+      { "label": "LinkedIn", "url": "https://linkedin.com/in/morganwebb" }
+    ],
+    "engagement": ["Hands-on", "Fractional", "Advisory"],
+    "createdAt": "2025-02-12",
+    "colorVariant": 2
+  },
+  {
+    "id": "dakota-kim",
+    "name": "Dakota Kim",
+    "title": "Backend Engineer",
+    "headline": "APIs, data pipelines, and system design.",
+    "shortBio": "Backend specialist. Designs and builds services that scale.",
+    "longBio": "Dakota focuses on backend systems: APIs, databases, message queues, and event-driven architecture. Experience in Go, Python, and Java; comfortable with Kubernetes and cloud. Helps teams harden reliability and performance.",
+    "history": [
+      { "role": "Backend Lead", "organization": "Data platform", "period": "2022–2024", "description": "Led API and pipeline design; reduced latency and cost." },
+      { "role": "Software Engineer", "organization": "E‑commerce", "period": "2019–2022", "description": "Order and inventory services." }
+    ],
+    "sectors": ["Fintech", "IoT"],
+    "tags": ["APIs", "Go", "Python", "System design"],
+    "keywords": ["backend", "API", "microservices", "databases", "Kubernetes"],
+    "location": "Helsinki, FI",
+    "languages": ["English", "Finnish"],
+    "avatar": "",
+    "links": [
+      { "label": "LinkedIn", "url": "https://linkedin.com/in/dakotakim" }
+    ],
+    "engagement": ["Hands-on", "Fractional", "Advisory"],
+    "createdAt": "2025-02-14",
+    "colorVariant": 3
+  },
+  {
+    "id": "jordan-lee",
+    "name": "Jordan Lee",
+    "title": "Frontend Developer",
+    "headline": "Accessible, performant UIs with React and design systems.",
+    "shortBio": "Frontend engineer. Builds fast, accessible interfaces and reusable components.",
+    "longBio": "Jordan specialises in frontend: React, Vue, design systems, and accessibility (a11y). Has led UI efforts for B2B and consumer products. Passionate about performance and inclusive design. Available for frontend builds and audits.",
+    "history": [
+      { "role": "Frontend Lead", "organization": "EdTech", "period": "2022–2024", "description": "Design system and core product UI." },
+      { "role": "Frontend Developer", "organization": "Startup", "period": "2020–2022", "description": "React apps and component libraries." }
+    ],
+    "sectors": ["Healthcare", "Fintech"],
+    "tags": ["React", "Vue", "Design systems", "Accessibility"],
+    "keywords": ["frontend", "React", "a11y", "design systems", "UI"],
+    "location": "Amsterdam, NL",
+    "languages": ["English", "Dutch"],
+    "avatar": "",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/jordanlee" },
+      { "label": "LinkedIn", "url": "https://linkedin.com/in/jordanlee" }
+    ],
+    "engagement": ["Hands-on", "Fractional"],
+    "createdAt": "2025-02-15",
+    "colorVariant": 4
+  },
+  {
+    "id": "casey-nord",
+    "name": "Casey Nord",
+    "title": "IoT & Embedded Systems Lead",
+    "headline": "Connected devices, firmware, and edge computing.",
+    "shortBio": "IoT and embedded engineer. From sensors and firmware to cloud ingestion.",
+    "longBio": "Casey has built IoT products in industrial and consumer settings. Experience with MCUs, RTOS, LoRa, cellular, and cloud backends (AWS IoT, etc.). Helps teams scope hardware–software integration and scale device fleets.",
+    "history": [
+      { "role": "IoT Lead", "organization": "Industrial IoT", "period": "2021–2024", "description": "Fleet of sensors and edge gateways; cloud pipeline." },
+      { "role": "Embedded Engineer", "organization": "Consumer devices", "period": "2018–2021", "description": "Firmware and connectivity for wearables." }
+    ],
+    "sectors": ["IoT", "Healthcare"],
+    "tags": ["IoT", "Embedded", "Firmware", "Edge computing"],
+    "keywords": ["IoT", "embedded", "firmware", "sensors", "edge", "LoRa"],
+    "location": "Stockholm, SE",
+    "languages": ["English", "Swedish"],
+    "avatar": "",
+    "links": [
+      { "label": "LinkedIn", "url": "https://linkedin.com/in/caseynord" }
+    ],
+    "engagement": ["Hands-on", "Advisory", "Fractional"],
+    "createdAt": "2025-02-16",
+    "colorVariant": 5
+  },
+  {
+    "id": "riley-park",
+    "name": "Riley Park",
+    "title": "Product Designer",
+    "headline": "Visual design and design systems for digital products.",
+    "shortBio": "Product and brand designer. Interfaces, design systems, and visual identity.",
+    "longBio": "Riley designs digital products and design systems for startups and scale-ups. Strong in Figma, component libraries, and brand alignment. Has shipped design systems used across multiple products. Available for design leadership and hands-on work.",
+    "history": [
+      { "role": "Lead Designer", "organization": "SaaS company", "period": "2022–2024", "description": "Design system and core product UI." },
+      { "role": "Product Designer", "organization": "Agency", "period": "2019–2022", "description": "Client work across fintech and health." }
+    ],
+    "sectors": ["Fintech", "Healthcare"],
+    "tags": ["Figma", "Design systems", "Visual design", "Brand"],
+    "keywords": ["design", "design systems", "Figma", "UI", "brand"],
+    "location": "Copenhagen, DK",
+    "languages": ["English", "Danish"],
+    "avatar": "",
+    "links": [
+      { "label": "Portfolio", "url": "https://rileypark.design" },
+      { "label": "LinkedIn", "url": "https://linkedin.com/in/rileypark" }
+    ],
+    "engagement": ["Hands-on", "Fractional", "Advisory"],
+    "createdAt": "2025-02-18",
+    "colorVariant": 0
+  },
+  {
+    "id": "skyler-vo",
+    "name": "Skyler Vo",
+    "title": "UX Designer & Researcher",
+    "headline": "User research, flows, and evidence-based UX.",
+    "shortBio": "UX designer and researcher. User-centred flows and usability testing.",
+    "longBio": "Skyler focuses on UX research and design: discovery, user flows, wireframes, and usability testing. Has worked in B2B and consumer products. Helps teams align on user needs and validate before build. Available for research-led projects and UX audits.",
+    "history": [
+      { "role": "Senior UX Designer", "organization": "Product company", "period": "2022–2024", "description": "Research and UX for core product; design ops." },
+      { "role": "UX Researcher", "organization": "Consultancy", "period": "2019–2022", "description": "User research and testing for clients." }
+    ],
+    "sectors": ["Healthcare", "Fintech"],
+    "tags": ["User research", "Usability testing", "Wireframes", "UX strategy"],
+    "keywords": ["UX", "user research", "usability", "flows", "wireframes"],
+    "location": "Remote (EU)",
+    "languages": ["English", "Vietnamese"],
+    "avatar": "",
+    "links": [
+      { "label": "LinkedIn", "url": "https://linkedin.com/in/skylervo" },
+      { "label": "Calendly", "url": "https://calendly.com/skylervo" }
+    ],
+    "engagement": ["Hands-on", "Fractional", "Advisory"],
+    "createdAt": "2025-02-20",
+    "colorVariant": 1
+  },
+  {
+    "id": "reese-hall",
+    "name": "Reese Hall",
+    "title": "QA Engineer & Tester",
+    "headline": "Manual and automated testing; quality assurance.",
+    "shortBio": "QA engineer. Test strategy, automation, and release confidence.",
+    "longBio": "Reese has set up and run QA for web and mobile products. Experience with manual test plans, Cypress/Playwright, and CI integration. Helps teams ship with fewer regressions and clearer acceptance criteria. Available for test strategy and hands-on QA.",
+    "history": [
+      { "role": "QA Lead", "organization": "Product company", "period": "2022–2024", "description": "Test strategy and automation; release sign-off." },
+      { "role": "QA Engineer", "organization": "Startup", "period": "2020–2022", "description": "Manual and automated testing for web app." }
+    ],
+    "sectors": ["Fintech", "Healthcare"],
+    "tags": ["QA", "Test automation", "Cypress", "Test strategy"],
+    "keywords": ["QA", "testing", "automation", "Cypress", "Playwright", "CI"],
+    "location": "Dublin, IE",
+    "languages": ["English"],
+    "avatar": "",
+    "links": [
+      { "label": "LinkedIn", "url": "https://linkedin.com/in/reesehall" }
+    ],
+    "engagement": ["Hands-on", "Fractional", "Advisory"],
+    "createdAt": "2025-02-22",
+    "colorVariant": 2
+  },
+  {
+    "id": "quinn-bennett",
+    "name": "Quinn Bennett",
+    "title": "Mobile App Developer",
+    "headline": "iOS and Android apps; React Native and native.",
+    "shortBio": "Mobile developer. Ships iOS and Android apps with React Native or native stacks.",
+    "longBio": "Quinn builds mobile apps for startups and product companies. Comfortable with React Native for cross-platform and Swift/Kotlin for native. Has shipped apps in fintech and health. Available for greenfield apps and modernisation.",
+    "history": [
+      { "role": "Mobile Lead", "organization": "Fintech app", "period": "2022–2024", "description": "React Native app; iOS and Android releases." },
+      { "role": "iOS Developer", "organization": "Health startup", "period": "2019–2022", "description": "Native iOS app for patient engagement." }
+    ],
+    "sectors": ["Fintech", "Healthcare"],
+    "tags": ["React Native", "iOS", "Android", "Mobile"],
+    "keywords": ["mobile", "React Native", "iOS", "Android", "Swift", "Kotlin"],
+    "location": "London, UK",
+    "languages": ["English", "Spanish"],
+    "avatar": "",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/quinnbennett" },
+      { "label": "LinkedIn", "url": "https://linkedin.com/in/quinnbennett" }
+    ],
+    "engagement": ["Hands-on", "Fractional", "Advisory"],
+    "createdAt": "2025-02-24",
+    "colorVariant": 3
+  }
+]
