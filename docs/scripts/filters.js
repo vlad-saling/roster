@@ -12,6 +12,15 @@ function getAllTags(smes) {
   return Object.keys(set).sort();
 }
 
+/** Unique sectors only, for main-page filter chips (keeps chips relevant and few). */
+function getFilterChipTags(smes) {
+  var set = {};
+  smes.forEach(function (s) {
+    (s.sectors || []).forEach(function (t) { set[t] = true; });
+  });
+  return Object.keys(set).sort();
+}
+
 function getActiveFilters() {
   try {
     var raw = localStorage.getItem(STORAGE_KEY);
@@ -70,6 +79,7 @@ function filterAndSort(smes, query, selectedTags, sortBy) {
 
 export {
   getAllTags,
+  getFilterChipTags,
   getActiveFilters,
   setActiveFilters,
   matchSme,

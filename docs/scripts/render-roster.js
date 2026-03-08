@@ -1,6 +1,6 @@
 import { loadSmes, getColorVariant } from './data.js';
 import {
-  getAllTags,
+  getFilterChipTags,
   getActiveFilters,
   setActiveFilters,
   filterAndSort
@@ -153,7 +153,7 @@ function run() {
     })
     .then(function (list) {
       allSmes = list;
-      allTags = getAllTags(list);
+      allTags = getFilterChipTags(list);
       renderQuickFilters(quickFilters, allTags, selectedTags, function (next) {
         selectedTags = next;
         refresh();

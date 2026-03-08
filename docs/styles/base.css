@@ -164,30 +164,12 @@ body.theme-dark {
 }
 
 .site-footer-bottom {
-  position: relative;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
   padding: 1.25rem 1.25rem 1.5rem;
   margin-top: auto;
   flex-grow: 1;
   flex-shrink: 0;
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-  isolation: isolate;
-}
-
-.site-footer-bottom::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  top: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-  z-index: -1;
-  pointer-events: none;
 }
 
 @media (min-width: 768px) {
@@ -198,6 +180,9 @@ body.theme-dark {
 }
 
 .app-footer {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 0.75rem;
   color: rgba(248, 250, 252, 0.8);
   opacity: 0.95;

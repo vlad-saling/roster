@@ -17,8 +17,8 @@ Each SME is a single object in the **`docs/data/smes.json`** array. Use this sch
 | `shortBio` | string | **Yes** | 1–2 sentences for the roster card (keep under ~160 chars for display). |
 | `longBio` | string | No | Full bio; paragraphs separated by `\n\n`. Shown on profile page. |
 | `history` | array | No | Professional / work history. Each item: `{ "role": "...", "organization": "...", "period": "2020–2023", "description": "..." }`. Shown below bio. |
-| `sectors` | string[] | No | High-level sectors (e.g. `["Web3", "Fintech"]`). Used for filter chips and card pill. |
-| `tags` | string[] | No | Expertise tags (e.g. `["Tokenomics", "MEV"]`). Used in filters and profile. |
+| `sectors` | string[] | No | High-level sectors (e.g. `["IoT", "SaaS"]`). **Used for the main-page filter chips** and the card sector pill. Keep relevant and consistent so the filter bar stays useful. |
+| `tags` | string[] | No | Expertise tags (e.g. `["Rust", "Backend"]`). Shown on cards and profile; used for **search** and for matching when a sector filter is applied. Not shown as filter chips. |
 | `keywords` | string[] | No | Extra terms for search (e.g. `["protocol", "L1", "DeFi"]`). |
 | `location` | string | No | e.g. "Remote (EU)", "London, UK". |
 | `languages` | string[] | No | Spoken languages (e.g. `["English", "Slovak", "Czech"]`). Shown on profile and roster card. |
@@ -89,6 +89,14 @@ Location: Remote (EU). Links: example.com/jane, @janedee, LinkedIn.
    - Keep the array sorted if the repo convention is e.g. alphabetical by `id` or by `createdAt` (see README or existing file).
 6. **Verify**: Ensure the file is valid JSON (no duplicate keys, no trailing commas before `]` or `}` if the project's linter forbids them).
 7. **Color (optional but recommended)**: When adding a new person, set `colorVariant` to a random integer 0–5 so that profile has a permanent, consistent colour on the roster and profile page. If omitted, the site derives one from the profile id.
+
+---
+
+## Filter tags (main page)
+
+- **Filter chips** on the main roster are built from **`sectors` only** (not from `tags`). That keeps the filter bar short and relevant (e.g. IoT, SaaS, Smart energy, B2B).
+- **When you add or edit a profile**: the filter chip list is **refreshed automatically** on the next page load—it is derived from the current `docs/data/smes.json`. No extra build step or config file to update.
+- **When adding a new profile**: always set **`sectors`** (e.g. 1–3 high-level sectors). That ensures the new profile is filterable and that the main-page filter chips stay complete. Use existing sector values where they fit (e.g. `"IoT"`, `"Smart energy"`, `"SaaS"`) so chips stay consistent; add a new sector only when it’s a distinct category.
 
 ---
 
