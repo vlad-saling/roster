@@ -49,6 +49,16 @@
   background: #f1f5f9;
 }
 
+.sme-card,
+.sme-card * {
+  text-decoration: none !important;
+}
+
+.sme-card:hover,
+.sme-card:hover * {
+  text-decoration: none !important;
+}
+
 .sme-card {
   position: relative;
   display: flex;
