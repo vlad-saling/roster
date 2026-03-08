@@ -54,5 +54,76 @@
     "engagement": ["Hands-on", "Fractional", "Advisory"],
     "createdAt": "2025-03-08",
     "colorVariant": 1
+  },
+  {
+    "id": "embedded-linux-iot-lead",
+    "name": "Embedded Linux & IoT Lead",
+    "title": "CTO / Embedded Systems Architect",
+    "headline": "Yocto, STM32, Nordic BLE, NXP i.MX93; 20+ years Linux, 8+ embedded, 10+ cloud/IoT.",
+    "shortBio": "CTO-level embedded Linux and IoT architect. Yocto, STM32, Nordic BLE, NXP i.MX93; CI/CD and secure cloud backends.",
+    "longBio": "Senior technology executive with 20+ years in embedded systems, enterprise messaging platforms, and scalable IoT cloud architectures. Specialized in Yocto-based Embedded Linux (NXP i.MX93, Variscite baseline), STM32 microcontrollers, Nordic Semiconductor BLE, and CI/CD. Hands-on experience with SoC and microcontroller platforms, electronics, and radio technologies (BLE, 4G/5G). Strong background in performance engineering, NFR definition, high-availability systems, and secure IoT backends. Uses modern ML/AI engineering tools to accelerate architecture validation and prototyping. Proficient in C, C++, Python and GitHub-based workflows. Operates at architecture and technical leadership level, building prototypes while supervising and mentoring distributed development teams.",
+    "history": [
+      { "role": "Chief Technology Officer", "organization": "Smart energy & IoT company", "period": "2014–present", "description": "Embedded Linux & DevOps: architected Yocto-based Embedded Linux platform (NXP i.MX93, Variscite). Established on-prem CI/CD (Jenkins, GitHub) for embedded development. Micromobility IoT: designed STM32 BLE controller architecture, React-based mobile app architecture, secure cloud backend with time-series data; mentored distributed team through production delivery. EU smart city programme: architected smart EV charging with spot-price optimization, ML-based smart thermostat platform, citizen mobile app, scalable cloud and secure IoT backend; led deployment across multi-city consortium. Earlier: smart EV charging prototype, demand-response pilot, cloud architecture roadmap, home automation POC." },
+      { "role": "Lead Developer / Solution Architect", "organization": "Large technology company", "period": "1999–2013", "description": "Architected high-volume SMS/MMS/E-mail platforms. Defined solution architecture, NFRs, performance and security. Ported systems Solaris → Linux (C++). Led international virtual teams." }
+    ],
+    "sectors": ["IoT", "Smart energy", "Embedded systems"],
+    "tags": ["Yocto", "Embedded Linux", "STM32", "Nordic BLE", "NXP i.MX93", "CI/CD", "Cloud architecture", "IoT"],
+    "keywords": ["Yocto", "embedded Linux", "STM32", "BLE", "NXP", "i.MX93", "IoT", "cloud", "CI/CD", "C", "C++", "Python"],
+    "location": "Nordic",
+    "languages": ["English"],
+    "avatar": "",
+    "links": [],
+    "engagement": ["Hands-on", "Fractional", "Advisory"],
+    "createdAt": "2025-03-08",
+    "colorVariant": 2
+  },
+  {
+    "id": "fullstack-mobile-iot-developer",
+    "name": "Full-Stack & Mobile Developer",
+    "title": "Software Developer",
+    "headline": "React Native, Vue, React, Python, AWS; 7+ years application development and IoT platforms.",
+    "shortBio": "Developer with 7+ years in React Native, React, Vue, Python, AWS, Node.js. Cross-platform mobile apps, AWS serverless, and IoT backend integration.",
+    "longBio": "Developer with 7+ years of experience in application development and maintenance. Technologies include React Native, React, Vue, Python, AWS, Node.js. Experienced in building cross-platform mobile applications using Vue with Ionic Framework and Capacitor, and React Native with TypeScript; modern state management (Redux Toolkit, RTK Query, Pinia). Led high-performance React Native apps with themeable design systems (React Native Paper) and animated interfaces (Reanimated). Backend and platform work: AWS (S3, EC2, LightSail, Lambda, API Gateway, CloudWatch), serverless and standard InfluxDB, Python microservices, MQTT, Dockerized Traefik, Grafana, Node.js notification services. Linux environment and scalable, maintainable application architecture. Bachelor degree in Information Science & Engineering from a technical university.",
+    "history": [
+      { "role": "Developer", "organization": "Smart energy & IoT company", "period": "2018–present", "description": "Cross-platform mobile apps (Vue/Ionic/Capacitor, React Native/TypeScript). Design systems (React Native Paper, Reanimated). AWS backend: BOTO3, S3, Lambda, serverless and standard InfluxDB. Dockerized Traefik, Grafana. Python microservices, MQTT publish/subscribe for mobile developers. Node.js and MySQL notification service maintenance. Linux environment." }
+    ],
+    "sectors": ["IoT", "Smart energy", "Mobile"],
+    "tags": ["React Native", "Vue", "React", "Python", "AWS", "Node.js", "InfluxDB", "MQTT", "Docker"],
+    "keywords": ["React Native", "Vue", "React", "Python", "AWS", "Lambda", "InfluxDB", "MQTT", "Docker", "mobile", "IoT"],
+    "location": "Nordic",
+    "languages": ["English", "Finnish"],
+    "avatar": "",
+    "links": [],
+    "engagement": ["Hands-on", "Fractional"],
+    "createdAt": "2025-03-08",
+    "colorVariant": 3
+  },
+  {
+    "id": "ceo-business-development-iot",
+    "name": "CEO & Business Development Lead",
+    "title": "Chief Executive Officer",
+    "headline": "Vision, B2B sales, financing, EU innovation projects; IoT and smart digital services.",
+    "shortBio": "CEO and co-founder. Vision, strategy, B2B sales, partnerships, financing, and EU/national innovation project leadership for IoT and smart services.",
+    "longBio": "Entrepreneur and co-founder, partner and board chairman of a smart energy and IoT company. Chief Executive Officer (2019–): vision, business development, partnerships, and financing; company vision, strategy, and long-term product roadmap for smart IoT and digital services; B2B sales, project and license agreements; strategic customer and industry partnerships; company financing, investor relations, and public innovation funding; innovation and concept development; R&D direction (IoT systems, cloud services, RF-based solutions); representation in EU and national innovation programmes including proposal preparation and execution; governance, audits, financial reporting; cross-functional product development (hardware, mobile, cloud, UI); stakeholder communication. Previously Chief Sourcing Officer (2013–2019): RFI/RFP, supplier relations, logistics, accounting; concept lead; B2B sales; service management (ITIL-based support); Scrum master and project manager for native iOS/Android; test and QA, cloud, AWS, RF hardware, mobile apps; R&D and smart-home IoT (LoRaWAN, Z-Wave, BLE); EU and national innovation project applications. Earlier career at a large technology company: senior transition manager, IT manager (virtual team of 30), release manager and configuration owner, application specialist, technical support. B.Sc. in Information Technology and Media from a university of applied science; vocational background in computing and electronics.",
+    "history": [
+      { "role": "Chief Executive Officer", "organization": "Smart energy & IoT company", "period": "2019–present", "description": "Vision, strategy, long-term product roadmap for smart IoT and digital services. B2B sales, project and license agreements. Strategic customer relationships and industry partnerships. Financing, investor relations, public innovation funding. R&D direction (IoT, cloud, RF). EU and national innovation project representation and execution. Governance, audits, financial reporting. Cross-functional product development coordination." },
+      { "role": "Chief Sourcing Officer", "organization": "Smart energy & IoT company", "period": "2013–2019", "description": "RFI/RFP, supplier relations, logistics, accounting. Concept lead, B2B sales. Service management (ITIL). Scrum master and project manager for native iOS/Android. Test manager, cloud, AWS, RF hardware, mobile apps. R&D, smart-home IoT (LoRaWAN, Z-Wave, BLE). EU and national innovation project applications." },
+      { "role": "Senior Transition Manager", "organization": "Large technology company", "period": "2012–2013", "description": "Deployment and transition to service, supplier and vendor management, financial planning, hosting-centre coordination, infrastructure project plans." },
+      { "role": "IT Manager", "organization": "Large technology company", "period": "2009–2011", "description": "Led virtual team of 30 across countries. Stakeholder and partner intermediary. Infrastructure project plans, server environments, scalable infrastructure, MRM evaluation, procurement, supplier and contract management." },
+      { "role": "Release Manager and Configuration Owner", "organization": "Large technology company", "period": "2006–2009", "description": "Stakeholder and vendor intermediary, configuration owner, Scrum master, gatekeeper, requirements gathering, training." },
+      { "role": "Senior Application Specialist", "organization": "Large technology company", "period": "2002–2006", "description": "Technical deployment manager for global B2C service; 3rd tier support; duty officer 24/7; user account management; support tool deployment and training." },
+      { "role": "Application Specialist", "organization": "Large technology company", "period": "2001–2002", "description": "3rd tier support and testing for B2C service; stakeholder communication and training." },
+      { "role": "Technical support, administrator assistant", "organization": "Large technology company", "period": "2000–2001", "description": "Product presentations, presentation area administration, technical roadshow and exhibition support, CMDB, inventory." }
+    ],
+    "sectors": ["IoT", "Smart energy", "B2B"],
+    "tags": ["CEO", "Business development", "B2B sales", "Financing", "EU projects", "IoT", "Scrum", "ITIL"],
+    "keywords": ["CEO", "business development", "B2B", "financing", "Horizon", "innovation", "IoT", "Scrum", "ITIL", "AWS"],
+    "location": "Nordic",
+    "languages": ["English", "Finnish", "Swedish"],
+    "avatar": "",
+    "links": [],
+    "engagement": ["Advisory", "Fractional"],
+    "createdAt": "2025-03-08",
+    "colorVariant": 4
   }
 ]

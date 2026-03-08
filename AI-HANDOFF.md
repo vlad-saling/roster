@@ -92,6 +92,24 @@ Location: Remote (EU). Links: example.com/jane, @janedee, LinkedIn.
 
 ---
 
+## Anonymization (real CVs → roster profiles)
+
+When adding profiles derived from **real CVs**, anonymize so that individuals and employers cannot be identified. Apply these rules consistently.
+
+| What | Practice | Example |
+|------|----------|--------|
+| **Display name** | Do **not** use the person’s real name. Use a **role-based label** that describes their expertise (used as the main display “name” on the roster). | "Embedded Linux & IoT Lead", "Full-Stack & Mobile Developer", "CEO & Business Development Lead" |
+| **`id`** | Slug derived from the **role-based name** (lowercase, hyphenated), not from the real name. Must be unique. | `embedded-linux-iot-lead`, `fullstack-mobile-iot-developer`, `ceo-business-development-iot` |
+| **Employers / organizations** | Replace real company names with **generic descriptors**. | "Large technology company", "Smart energy & IoT company", "Product company", "Software agency", "B2B SaaS" |
+| **Locations** | Use **region or country** only, not cities, campuses, or addresses. | "Nordic", "Central Europe", "Finland" |
+| **Education** | Use **generic institution type**, not school or university names. | "University of applied science", "Technical university" |
+| **Personal details** | Omit specific courses, institutes, LinkedIn, recommendations, family, and other identifying text. | Do not include "please see my LinkedIn" or named certifications that identify the person. |
+| **Bios and history** | Keep **roles, technologies, and responsibilities**; strip names of people, projects, and programs that identify the employer or individual. | Keep "Led EU Horizon 2020 smart city programme" as "Led EU smart city / innovation programme" if the exact programme name is identifying. |
+
+**Summary:** The roster should reflect real skills and experience without allowing identification of the person or their past employers. When in doubt, prefer a more generic formulation.
+
+---
+
 ## Localization (UI only)
 
 - **Scope**: Only **UI chrome** is translated (navigation, headings, filter labels, buttons, footer, profile section titles, error messages). SME names, bios, tags, and links in `smes.json` stay in English.
