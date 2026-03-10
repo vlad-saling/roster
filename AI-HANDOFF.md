@@ -10,7 +10,7 @@ Each SME is a single object in the **`docs/data/smes.json`** array. Use this sch
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `id` | string | **Yes** | Unique slug: lowercase, hyphenated (e.g. `jane-dee`). Used in URLs. |
+| `id` | string | **Yes** | UUID v4 (e.g. `"82faefcc-111c-4618-a185-5910c174e185"`). Used in URLs. Generate a new UUID for each profile. |
 | `name` | string | **Yes** | Full display name. |
 | `title` | string | **Yes** | Job title or role (e.g. "Head of Protocol Research"). |
 | `headline` | string | No | One-line positioning (used on profile page). |
@@ -28,7 +28,7 @@ Each SME is a single object in the **`docs/data/smes.json`** array. Use this sch
 | `createdAt` | string | No | ISO date or YYYY-MM-DD for "recent" sort. |
 | `colorVariant` | number | No | **When adding a new person**, assign a permanent color: set to an integer **0–5** (random or chosen). This drives the card top bar and profile avatar colour (teal, blue, violet, amber, rose, cyan). If omitted, the app derives a variant from the profile `id` hash.
 
-- **Slug rule for `id`**: lowercase, spaces and punctuation replaced by a single hyphen, no leading/trailing hyphens (e.g. "Jane Doe" → `jane-doe`). Must be **unique** in the file.
+- **ID rule**: Generate a random UUID v4 for each new profile (e.g. via `uuidgen` or `python3 -c "import uuid; print(uuid.uuid4())"`). Must be **unique** in the file.
 
 ---
 
@@ -53,7 +53,7 @@ Location: Remote (EU). Links: example.com/jane, @janedee, LinkedIn.
 
 ```json
 {
-  "id": "jane-dee",
+  "id": "c3a1f9e2-7b84-4d56-9e0a-1a2b3c4d5e6f",
   "name": "Jane Dee",
   "title": "Head of Protocol Research",
   "headline": "Web3 protocol design and tokenomics.",
@@ -81,7 +81,7 @@ Location: Remote (EU). Links: example.com/jane, @janedee, LinkedIn.
 
 1. **Receive**: User provides raw text (e.g. copy-pasted from a PDF bio).
 2. **Extract**: Parse name, title, bio, expertise, sectors, location, spoken languages, links, and engagement from the text. Infer missing fields or leave as empty string / empty array.
-3. **Generate `id`**: From the person’s name using the slug rule (lowercase, hyphenated, unique). If a conflict exists, append a number (e.g. `jane-dee-2`) or ask the user.
+3. **Generate `id`**: Create a new UUID v4 (e.g. `python3 -c "import uuid; print(uuid.uuid4())"`). Must be unique in the file.
 4. **Build**: One JSON object matching the schema above. Use double quotes, no trailing commas if the JSON standard in the repo disallows them (the current `smes.json` uses no trailing commas).
 5. **Insert**: Add the new object to the **array** in `docs/data/smes.json`:
    - Preserve existing indentation (e.g. 2 spaces).

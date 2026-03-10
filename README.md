@@ -6,7 +6,7 @@ A static, mobile-first roster of subject-matter experts (SMEs) with a Bento-lite
 
 - **`docs/`** — Static site (GitHub Pages can serve this folder as the site root).
   - **`index.html`** — Roster grid with keyword/tag filters and search.
-  - **`profile.html`** — Detail page for one SME (`?id=<slug>`).
+  - **`profile.html`** — Detail page for one SME (`?id=<uuid>`).
   - **`data/smes.json`** — Single source of truth for all profiles.
   - **`data/i18n.json`** — UI translations for English, Finnish, and Swedish.
   - **`scripts/`** — Data loading, filters, i18n, and rendering (plain JS modules).
@@ -42,7 +42,7 @@ Or use Node (e.g. `npx serve docs`) or another static server; ensure the server 
 All profile data lives in **`docs/data/smes.json`**: one JSON object per SME. To add someone:
 
 1. Add a new object to the array using the schema and examples in **`AI-HANDOFF.md`**.
-2. Use a unique `id` (lowercase, hyphenated slug, e.g. `jane-doe`).
+2. Use a unique `id` (UUID v4, e.g. `82faefcc-111c-4618-a185-5910c174e185`).
 3. Save the file; the roster and `profile.html?id=<id>` will reflect the change after refresh.
 
 For AI-assisted workflow (e.g. pasting PDF bios and generating entries), see **`AI-HANDOFF.md`**.

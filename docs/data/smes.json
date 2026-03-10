@@ -1,6 +1,6 @@
 [
   {
-    "id": "rust-backend-systems-lead",
+    "id": "82faefcc-111c-4618-a185-5910c174e185",
     "name": "Rust & Backend Systems Lead",
     "title": "Senior Backend Engineer",
     "headline": "Rust and production backend systems since 2019; 18+ years across the stack.",
@@ -26,7 +26,7 @@
     "colorVariant": 0
   },
   {
-    "id": "frontend-design-systems-lead",
+    "id": "5c5e343d-3714-47c7-9d27-8da28c72e023",
     "name": "Frontend & Design Systems Lead",
     "title": "Frontend Engineer",
     "headline": "Vue, React, TypeScript; design systems, accessibility, and front-end architecture.",
@@ -56,7 +56,7 @@
     "colorVariant": 1
   },
   {
-    "id": "embedded-linux-iot-lead",
+    "id": "6e8bdc13-24b4-48fa-8857-d98e1d19fe5d",
     "name": "Embedded Linux & IoT Lead",
     "title": "CTO / Embedded Systems Architect",
     "headline": "Yocto, STM32, Nordic BLE, NXP i.MX93; 20+ years Linux, 8+ embedded, 10+ cloud/IoT.",
@@ -78,7 +78,7 @@
     "colorVariant": 2
   },
   {
-    "id": "fullstack-mobile-iot-developer",
+    "id": "3a9888ae-074d-4ec0-9e17-bf9120c58a9b",
     "name": "Full-Stack & Mobile Developer",
     "title": "Software Developer",
     "headline": "React Native, Vue, React, Python, AWS; 7+ years application development and IoT platforms.",
@@ -99,7 +99,7 @@
     "colorVariant": 3
   },
   {
-    "id": "ceo-business-development-iot",
+    "id": "0b8ce9f1-f1b6-4a8c-bf5b-d293b6f63eb2",
     "name": "CEO & Business Development Lead",
     "title": "Chief Executive Officer",
     "headline": "Vision, B2B sales, financing, EU innovation projects; IoT and smart digital services.",
