@@ -1,10 +1,21 @@
-/* Full-width hero banner (between header and main content) */
-.hero-banner {
-  width: 100%;
-  padding: 3rem 1.5rem;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-  color: #f1f5f9;
+/* Hero: image with banner overlaid on bottom */
+.hero {
   position: relative;
+  width: 100%;
+}
+
+/* Full-width hero banner overlaid on bottom of hero image */
+.hero-banner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 3rem 1.5rem;
+  /* 80% opacity so hero image shows through */
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 41, 59, 0.8) 50%, rgba(15, 23, 42, 0.8) 100%);
+  color: #f1f5f9;
   overflow: hidden;
 }
 
@@ -12,8 +23,8 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle at 20% 50%, rgba(56, 189, 248, 0.12) 0%, transparent 50%),
-    radial-gradient(circle at 80% 50%, rgba(34, 211, 238, 0.08) 0%, transparent 45%);
+  background-image: radial-gradient(circle at 20% 50%, rgba(56, 189, 248, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(34, 211, 238, 0.06) 0%, transparent 45%);
   pointer-events: none;
 }
 
@@ -72,6 +83,20 @@
   .hero-banner__title {
     font-size: 2.25rem;
   }
+}
+
+/* Full-width hero image */
+.hero-image {
+  width: 100%;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.hero-image__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
 }
 
 /* Tall footer */

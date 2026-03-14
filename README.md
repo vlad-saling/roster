@@ -39,10 +39,14 @@ Or use Node (e.g. `npx serve docs`) or another static server; ensure the server 
 
 ## Adding or editing experts
 
-All profile data lives in **`docs/data/smes.json`**: one JSON object per SME. To add someone:
+All profile data lives in **`docs/data/smes.json`**: one JSON object per SME.
+
+**Profile data rules:** Every profile **must** have a unique **`id`** in **UUID v4** format (e.g. `82faefcc-111c-4618-a185-5910c174e185`). The `id` is used in profile URLs and must be unique across the file. Full schema and examples: **`AI-HANDOFF.md`**.
+
+To add someone:
 
 1. Add a new object to the array using the schema and examples in **`AI-HANDOFF.md`**.
-2. Use a unique `id` (UUID v4, e.g. `82faefcc-111c-4618-a185-5910c174e185`).
+2. Generate a new UUID v4 for `id` (e.g. `uuidgen` or `python3 -c "import uuid; print(uuid.uuid4())"`).
 3. Save the file; the roster and `profile.html?id=<id>` will reflect the change after refresh.
 
 For AI-assisted workflow (e.g. pasting PDF bios and generating entries), see **`AI-HANDOFF.md`**.

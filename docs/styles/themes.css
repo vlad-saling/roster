@@ -35,7 +35,7 @@ body.theme-dark {
 .theme-dark .app-nav__item:hover { color: #f9fafb; }
 
 .theme-dark .hero-banner {
-  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 58, 95, 0.8) 50%, rgba(15, 23, 42, 0.8) 100%);
 }
 .theme-dark .hero-banner::after {
   background: linear-gradient(90deg, var(--accent-warm) 0%, rgba(34, 211, 238, 0.7) 100%);
