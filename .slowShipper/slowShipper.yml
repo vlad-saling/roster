@@ -1,0 +1,29 @@
+# slowShipper — project config
+# Locate this file at .slowShipper/slowShipper.yml in your workspace root (team mode),
+# or in a slowShipper-dock/ directory anywhere up the directory tree from your workspace (dock mode).
+# In dock mode, context_path is typically <project-slug>/context (e.g. my-app/context).
+
+version: 0.2.2
+
+personality: true  # Set to false if you were born without a sense of humor
+thorough: false  # true = mandatory deep review, security review, and deslop on every task
+
+default_project: my-project
+
+projects:
+  my-project:
+    name: My Project
+    repository: my-repo
+    base_branch: main
+    context_path: context
+    workspace_hint: >
+      Describe workspace layout if non-standard (e.g. monorepo, multirepo).
+    # wake: <command>
+    # Optional. Runs once per chat session before any slowShipper command.
+    # Example: gns get gns.wake --json
+    # toolchain:
+    #   - npm run lint
+    #   - npx prettier --check .
+    #   - npx tsc --noEmit
+    # Optional. Shell commands the agent can run to validate code.
+    # The agent will ask before running these.
