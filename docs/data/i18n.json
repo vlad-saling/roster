@@ -1,8 +1,6 @@
 {
   "en": {
     "nav.experts": "Experts",
-    "nav.pricing": "Pricing",
-    "nav.about": "About",
     "banner.tagline": "Expertise on demand",
     "banner.title": "Trusted advisors for complex challenges",
     "hero.titlePrefix": "Meet our",
@@ -52,8 +50,6 @@
   },
   "fi": {
     "nav.experts": "Asiantuntijat",
-    "nav.pricing": "Hinnat",
-    "nav.about": "Tietoa",
     "banner.tagline": "Asiantuntijuus tarvittaessa",
     "banner.title": "Luotettavat neuvonantajat monimutkaisiin haasteisiin",
     "hero.titlePrefix": "Tutustu",
@@ -103,8 +99,6 @@
   },
   "sv": {
     "nav.experts": "Experter",
-    "nav.pricing": "Priser",
-    "nav.about": "Om oss",
     "banner.tagline": "Expertis när det behövs",
     "banner.title": "Pålitliga rådgivare för komplexa utmaningar",
     "hero.titlePrefix": "Möt våra",
