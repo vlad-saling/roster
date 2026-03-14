@@ -1,22 +1,32 @@
-/* Hero: image with banner overlaid on bottom */
+/* Hero: image + banner. Mobile: stacked; from 768px: banner overlaid on bottom of image */
 .hero {
   position: relative;
   width: 100%;
 }
 
-/* Full-width hero banner overlaid on bottom of hero image */
+/* Full-width hero banner; on mobile sits below image, on wide viewports overlays image */
 .hero-banner {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 1;
+  position: relative;
   padding: 3rem 1.5rem;
-  /* 80% opacity so hero image shows through */
+  /* 80% opacity on wide viewports so hero image shows through; solid on mobile when stacked */
   background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 41, 59, 0.8) 50%, rgba(15, 23, 42, 0.8) 100%);
   color: #f1f5f9;
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .hero-banner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 4rem 2rem;
+  }
+  .hero-banner__title {
+    font-size: 2.25rem;
+  }
 }
 
 .hero-banner::before {
@@ -76,12 +86,13 @@
   color: #f8fafc;
 }
 
-@media (min-width: 768px) {
+/* Optional: slightly smaller banner on very narrow viewports when stacked */
+@media (max-width: 400px) {
   .hero-banner {
-    padding: 4rem 2rem;
+    padding: 1.25rem 1rem;
   }
   .hero-banner__title {
-    font-size: 2.25rem;
+    font-size: 1.35rem;
   }
 }
 
